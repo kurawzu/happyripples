@@ -1,0 +1,140 @@
+.Act{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    
+   
+}
+
+.Act header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+    z-index: 100;
+    width: 100%;
+    height: 5vh;
+}
+.Act header h1 {
+    font-size: 3rem;
+    color: #023F76;
+
+}
+   
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    padding: 2vh 100px;
+    
+    
+}
+
+.itemRoom2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FF9832;
+    border-radius: 20px;
+    height: 37vh;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+   
+  }
+
+  .itemRoom2:hover {
+    background-color: #ff5e00;
+    
+  }
+  
+  .itemRoom2 img {
+    max-width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    object-fit: cover;
+  }
+  .DESC{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+  }
+  .TITLE {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+ 
+
+  .itemTop2,
+.itemBottom2 {
+  grid-column: span 2; 
+}
+.itemTop2 {
+  grid-row: span 2; 
+}
+.itemBottom2 {
+  grid-row: span 2; 
+}
+  
+ 
+@media screen and (max-width: 768px) {
+  .container2 {
+    padding: 0; /* Adjust the padding */
+    
+  }
+
+  .Act {
+    height: auto; /* Remove fixed height to allow content to fit */
+  }
+
+  .Act header {
+    height: 7vh; /* Adjust header height */
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .Act header h1{
+    font-size: 1.5rem;
+  }
+
+  .itemRoom2 {
+    height: 13vh; /* Reduce the height for smaller screens */
+    width: 80%;
+    justify-self: center; 
+  }
+
+  .itemRoom2 img {
+    height: 55%; /* Adjust image height */
+  }
+
+  .itemTop2,
+  .itemBottom2 {
+    grid-column: span 1; /* Modify grid-column span */
+
+  }
+
+  .itemTop2,
+  .itemBottom2,
+  .itemRoom2 {
+    grid-row: span 1; /* Adjust grid rows */
+  }
+
+  .Act .DESC{
+    font-size: 0.5rem;
+    margin-bottom: 5px;
+
+  }
+  .Act .TITLE {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+

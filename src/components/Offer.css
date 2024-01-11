@@ -1,0 +1,63 @@
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+ }
+
+ .ameni .wan{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px 0px 0px;
+        z-index: 100;
+        width: 100%;
+        color: #023F76;
+        font-size: 2rem;
+
+ }
+
+ .ameni{
+    min-height: 20vh;
+    margin: 50px;
+ }
+
+ .card {
+    justify-self: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FF9832;
+    font-size: 1rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 80%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+  
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+    background: #ff5e00;
+ }
+
+ @media screen and (max-width: 768px) {
+   .ameni{
+      margin-top: -100px;
+   }
+
+   .ameni .wan{
+      font-size: 1rem;
+
+}
+
+
+ }

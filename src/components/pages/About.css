@@ -1,0 +1,99 @@
+.About {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container3 {
+  padding: 2vh 5vw; 
+}
+
+.About nav {
+  display: flex;
+  flex-direction: column;
+  height: auto; 
+}
+
+.About h2, .About p {
+  color: #023f76;
+}
+
+.About h1 {
+  color: #ff9832;
+  font-size: 5rem;
+  transition: color 0.5s ease;
+}
+
+.About p {
+  text-align: center;
+  font-size: 1rem; 
+}
+
+.About h2 {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.About h2:hover{
+  color: #ff5e00;
+}
+
+.About h1:hover{
+  color: #ff5e00;
+}
+
+.About a {
+  color: inherit; /* Set text color to inherit from parent */
+  text-decoration: none; 
+}
+
+
+.video-container {
+  height: 65vh;
+  width: 100%;
+  margin-top: 2vh; 
+  
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 7px solid #ff9832;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .container3 {
+    padding: 10vh 5vw; 
+  }
+
+  .About h1 {
+    font-size: 3rem;
+  }
+
+  .video-container {
+    height: 40vh;
+  }
+
+  .video-container video {
+    border: 5px solid #ff9832;
+  }
+
+  .About h1 {
+    font-size: 2.5rem;
+  }
+  
+  .About p {
+    font-size: 0.8rem; 
+  }
+  
+  .About h2 {
+    font-size: 1rem;
+   
+  }
+  
+}
+

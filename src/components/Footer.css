@@ -1,0 +1,31 @@
+.ff{
+    position: relative;
+    min-height: 10vh;
+    width: 100%;
+    background-color: #ff9832;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ff h5{
+    cursor: pointer;
+    transition: color 0.5s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.ff h5 a{
+    text-decoration: none;
+    color: white;
+}
+
+.ff h5:hover{
+    color: #ff5e00;
+}
+
+.ff h5 a:hover{
+    color: #ff5e00;
+}
